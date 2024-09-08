@@ -1,6 +1,8 @@
 ## Cloud Computing - Uma Plataforma de Aprendizado Interativo
 
-![ ](nuvem.png)
+<div align="center">
+  <img src="nuvem.png">
+</div>
 
 **Descrição:**
 
