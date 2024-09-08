@@ -6,6 +6,8 @@
 
 **Descrição:**
 
+Link para acessar o projeto: [https://imersao-dev.pethersonml.com.br/](https://imersao-dev.pethersonml.com.br/)
+
 Este projeto web tem como objetivo fornecer uma plataforma intuitiva para aprender sobre os conceitos fundamentais do Cloud Computing. Ele oferece uma interface amigável que permite aos usuários pesquisar por tópicos específicos, filtrar o conteúdo por categorias (arquiteturas, modelos de cloud, DevOps) e explorar diversos recursos educacionais.
 
 _Modo Padrão_
