@@ -3,24 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Informativo sobre Infraestrutura em Cloud</title>
+    <title>Cloud Computing</title>
     <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/8cfaf7fb69.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <h1>Infraestrutura em Cloud</h1>
+      <h1>Cloud Computing</h1>
       <section>
         <input type="text" placeholder="Digite sua busca" id="campo-pesquisa" />
         <button onclick="pesquisar()">Pesquisar</button>
-        <button id="theme-switch">Modo Escuro</button>
+        <button id="theme-switch"><i class="fa-solid fa-moon"></i></button>
       </section>
     </header>
     <main>
+      <section class="filters" id="filters">
+        Filtros:
+        <button class="filtro" onclick="filtrar('arquiteturas')">
+          Arquiteturas
+        </button>
+        <button class="filtro" onclick="filtrar('modelos-de-cloud')">
+          Modelos de Cloud
+        </button>
+        <button class="filtro" onclick="filtrar('devops')">DevOps</button>
+      </section>
       <section class="resultados-pesquisa" id="resultados-pesquisa"></section>
     </main>
     <footer>
       <p>2024 - Informativos sobre Infraestrutura em Cloud.</p>
       <p>Todos os direitos reservados.</p>
+      <p>
+        <a href="https://www.linkedin.com/in/pethersonmonteiro/" target="_blank"
+          ><i class="fab fa-linkedin"></i>LinkedIn</a
+        >
+        <a href="https://github.com/PethersonML" target="_blank"
+          ><i class="fab fa-github"></i>GitHub</a
+        >
+      </p>
     </footer>
 
     <script src="dados.js"></script>

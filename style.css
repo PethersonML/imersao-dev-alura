@@ -31,7 +31,7 @@ header {
 }
 
 header.dark-mode {
-  background-color: #282c34;
+  background-color: #17191c;
 }
 
 /* Estiliza os títulos h1 */
@@ -39,7 +39,11 @@ h1 {
   font-size: 2rem; /* Tamanho da fonte */
   color: #1a237e; /* Cor do texto */
   text-align: center; /* Alinha o texto ao centro */
-  letter-spacing: 0.2rem; /* Espaçamento entre letras */
+  letter-spacing: 0.1rem; /* Espaçamento entre letras */
+}
+
+h1.dark-mode {
+  color: #a2d1f2;
 }
 
 header section {
@@ -71,9 +75,15 @@ header button {
   cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
 
+header button.dark-mode {
+  background-color: #a2d1f2;
+  color: #262626;
+}
+
 /* Adiciona efeito hover ao botão de pesquisa */
 header button:hover {
   background-color: #30475e; /* Muda a cor de fundo ao passar o mouse */
+  color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
 }
 
@@ -82,7 +92,43 @@ section {
   display: flex; /* Usa Flexbox para layout */
   flex-direction: column; /* Alinha os itens na vertical */
   align-items: center; /* Centraliza os itens horizontalmente */
-  margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+  margin-bottom: 3rem;
+}
+
+section.filters {
+  flex-direction: row;
+  margin: 0.2rem 1rem;
+  color: #ffffff;
+}
+
+.filtro {
+  background-color: #f2f2f2;
+  border-radius: 1rem;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+.filtro.dark-mode {
+  background-color: #052047;
+  color: #ffffff;
+}
+
+.filtro:hover {
+  background-color: #30475e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+  color: #ffffff;
+}
+
+.limpar {
+  font-family: "Fira Code", system-ui; /* Define a fonte padrão */
+  color: red;
+  border-style: solid;
+  border-color: red;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0.5rem 1rem;
+  margin-inline-start: auto;
 }
 
 /* Estiliza a caixa de resultados da pesquisa */
@@ -90,18 +136,21 @@ section {
   width: 60rem; /* Largura máxima da caixa de resultados */
   height: 55vh; /* Altura máxima da caixa de resultados */
   overflow-y: auto; /* Adiciona rolagem vertical se necessário */
-  margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
   padding: 1rem; /* Espaçamento interno */
   border-radius: 0.6rem; /* Borda arredondada */
 }
 
 /* Estiliza cada item de resultado */
 .item-resultado {
-  background: #ffffff; /* Cor de fundo dos itens */
+  background: #f2f2f2; /* Cor de fundo dos itens */
   border-radius: 0.6rem; /* Borda arredondada */
   padding: 1rem; /* Espaçamento interno */
   margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.item-resultado.dark-mode {
+  background: #052047;
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
@@ -110,10 +159,18 @@ section {
   color: #222831; /* Cor do texto */
 }
 
+.item-resultado.dark-mode h2 {
+  color: #ffffff;
+}
+
 /* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
   text-decoration: none; /* Remove o sublinhado padrão dos links */
   color: #30475e; /* Cor do texto dos links */
+}
+
+.item-resultado.dark-mode a {
+  color: #b8c3d1;
 }
 
 /* Estiliza os links quando são passados o mouse sobre */
@@ -127,6 +184,10 @@ section {
   margin: 0.5rem 0; /* Margem acima e abaixo */
 }
 
+.descricao-meta.dark-mode {
+  color: #d1d6de;
+}
+
 /* Estiliza o rodapé da página */
 footer {
   background-color: #f2f2f2; /* Cor de fundo do rodapé */
@@ -137,6 +198,30 @@ footer {
   position: absolute; /* Posiciona o rodapé */
   bottom: 0; /* Alinha ao fundo da página */
   font-size: 1rem; /* Tamanho da fonte */
+}
+
+footer.dark-mode {
+  background-color: #17191c;
+  color: #676d75;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+footer.dark-mode a {
+  color: #ffffff;
+}
+
+footer a:hover {
+  font-size: 1.6rem;
+  color: #1a237e;
+}
+
+footer.dark-mode a:hover {
+  color: #a2d1f2;
 }
 
 @media (max-width: 768px) {
